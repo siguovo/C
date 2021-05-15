@@ -1,0 +1,20 @@
+github操作:
+两个软件：
+git
+TortoiseGit
+
+git命令:
+1.git clone 链接    //克隆仓库
+2.git add 文件
+3.git commit -m "描述"
+4.git push
+两个初始化命令
+1.git config --global user.email "邮箱"
+2.git config --global user.name "github的用户名"
+
+提交代码:
+1.git init
+2.git add.
+3.git commit -m "提交信息"
+4.git remote add origin https://github.com/sigu0521/sigu.git
+5.git push origin master

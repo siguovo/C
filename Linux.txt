@@ -1,0 +1,194 @@
+程序编译过程:
+源文件生成预处理文件： 
+	gcc -E HelloWorld.c -o HelloWorld.i 
+	得到了一个HelloWorld.i文件
+	
+预处理文件生成编译文件： 
+	gcc -S HelloWorld.i -o HelloWorld.s 
+	得到了一个HelloWorld.s文件
+	
+编译文件生成汇编文件： 
+	gcc -c HelloWorld.s -o HelloWorld.o 
+	得到了一个HelloWorld.o文件
+	
+汇编文件生成可执行文件：
+	gcc HelloWorld.o -o HelloWorld
+	得到了一个HelloWorld可执行文件
+	
+源文件生成可执行文件：
+	gcc HelloWorld.c -o HelloWorld 
+	Linux系统运行可执行文件：./HelloWorld
+
+Linux常用命令
+
+ls
+ls -l
+ls -a
+ls -al
+ls -d
+ls -h
+ls -R
+ls -a -l /home
+ls -al /home
+ls -l d*  （列出当前目录下所以以d开头的文件）
+
+
+
+
+cd   （切换当前目录至dirname）
+cd /
+cd /home
+cd /home/Code
+cd ..	（返回上一层目录）#重要
+
+
+
+
+pwd  (查看当前工作目录的完整路径）
+pwd -P
+pwd -L
+
+
+mkdir   （创建指定名称的目录，需要管理员权限，不能创建重复名字目录）
+mkdir -m
+mkdir -p
+mkdir -v
+--help	    （显示此帮助信息并退出）	
+--version  （输出版本信息并退出）
+例子：
+mkdir test	（创建一个空目录，名字叫test）
+mkdir test/test1	（创建一个空目录test，然后在test目录下面再创建一个test1空目录）
+mkdir -m 777 test2	（创建权限为777的目录）
+mkdir -v test4		（创建目录都显示信息）
+
+
+
+rm命令	（删除一个目录中的一个或者多个文件或者目录，如果没有使用-r选项，rm不会删除目录，使用rm删除文件，通常可以将该文件恢复原状）
+
+rm -f
+rm -i
+rm -r
+rm -R	（将参数中列出的全部目录和子目录均递归的删除）
+rm -v	（详细显示进行的步骤）
+例子:
+rm test.txt	（系统会提示是否删除）
+rm -f test.txt	（强制删除，不提示）
+rm -r test	（将test子目录及目录中所有档案删除）
+
+
+rmdir命令	（从一个目录中删除一个或多个子目录项，需要管理员权限）
+rmdir -p
+rmdir -v
+例子:
+rmdir test1	（删除空目录test1，如果test1不是空目录就无法删除）
+rmdir -p test2 	（当test目录下仅有test2时，删除test2后test也是空目录，也会被删除）
+
+
+ipconfig命令	（ifconfig命令用来查看和配置网络设备）
+
+ifconfig
+
+
+
+
+
+
+
+
+用户和组的概念
+/etc/passwd
+输入:
+vim etc/passwd
+
+passwd文件 用户:
+name:x:UID:GID::/home/username:/bin/bash
+
+/etc/shadow
+输入:
+vim /etc/shadow
+
+退出vim编辑
+先按esc  然后输入  
+:q	（没有修改文件就直接可以退出，修改了就没法退出）
+:q!	（强制退出，如果文件被修改了也不会提示）
+:wq	（保存并退出）
+:w	（保存但不退出，还可以继续编辑）
+
+软连接/符号链接
+ln -s 源文件 链接文件
+例子:
+ln -s /root/anaconda-ks.cfg	/root/桌面/softlink
+查看:
+cd 桌面
+ls -l
+
+硬链接（Linux特有）
+inode
+
+例子:
+ln /root/anaconda-ks.cfg	/root/桌面/hardlink
+查看:
+ls -l
+
+stat /root/anaconda-ks.cfg	/root/桌面/hardlink
+两个文件的编号一致（Inode）
+
+常用命令:
+1.data命令
+data
+自主设置系统时间命令:
+data -s "2018-1-1 8:0:0"
+2.who命令
+who
+3.cal命令（日立）
+cal 
+cal 7 2020
+cal 9 1752
+4.su命令
+su sigu
+exit
+
+su root
+5.touch命令（不存在时创建文件，存在时会修改文件的时间）
+touch a.txt
+
+6.echo命令（shell程序的主要输出语句）
+echo "hello world"
+
+7.help命令（帮助语句）
+ls --help
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
