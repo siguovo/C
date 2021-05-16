@@ -161,6 +161,14 @@ ls --help
 初始时root没有密码
 初始化密码:sudo passwd
 
+Linux环境下编译:
+1.vim test.c
+2.编译
+3.wq
+4.ls查看
+5.gcc编译
+6.执行 ./test
+得到结果
 
 
 
