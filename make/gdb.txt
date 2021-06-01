@@ -1,2 +1,24 @@
 #gdb调试简单操作
 
+-g(makefile文件中加)
+
+gdb mybin_d   (打开调试)
+l 	(显示程序list)(可以在l后面加行号1,2,3,4)
+q 	(退出调试quit)
+
+b + 行号	(断点break point)
+info b    (查看断点)
+
+d + 断点的查询编号 (删除断点 delete)
+r 	(运行 running vs中类似F5)
+n	  (单步走 next 下一行 vs里面的F10逐过程)
+s   (进入函数里面 step 一步一步走 vs里面的F11逐语句)
+
+diplay + 变量 (查看值常显示 或 地址&i)
+undisplay + 编号	(取消常显示 或 地址&i)
+
+until + 行号 (跳出循环)
+
+finish (结束函数调用，跑完函数到函数最后一行)
+
+c  (一个断点跳到下一个断点 continue)
