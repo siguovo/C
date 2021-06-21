@@ -1,0 +1,112 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.2  43532  3772 ?        Ss   Jun06   0:14 /usr/lib/systemd/systemd --system --deserialize 15
+root         2  0.0  0.0      0     0 ?        S    Jun06   0:00 [kthreadd]
+root         4  0.0  0.0      0     0 ?        S<   Jun06   0:00 [kworker/0:0H]
+root         6  0.0  0.0      0     0 ?        S    Jun06   0:04 [ksoftirqd/0]
+root         7  0.0  0.0      0     0 ?        S    Jun06   0:00 [migration/0]
+root         8  0.0  0.0      0     0 ?        S    Jun06   0:00 [rcu_bh]
+root         9  0.0  0.0      0     0 ?        R    Jun06   2:04 [rcu_sched]
+root        10  0.0  0.0      0     0 ?        S<   Jun06   0:00 [lru-add-drain]
+root        11  0.0  0.0      0     0 ?        S    Jun06   0:03 [watchdog/0]
+root        13  0.0  0.0      0     0 ?        S    Jun06   0:00 [kdevtmpfs]
+root        14  0.0  0.0      0     0 ?        S<   Jun06   0:00 [netns]
+root        15  0.0  0.0      0     0 ?        S    Jun06   0:00 [khungtaskd]
+root        16  0.0  0.0      0     0 ?        S<   Jun06   0:00 [writeback]
+root        17  0.0  0.0      0     0 ?        S<   Jun06   0:00 [kintegrityd]
+root        18  0.0  0.0      0     0 ?        S<   Jun06   0:00 [bioset]
+root        19  0.0  0.0      0     0 ?        S<   Jun06   0:00 [bioset]
+root        20  0.0  0.0      0     0 ?        S<   Jun06   0:00 [bioset]
+root        21  0.0  0.0      0     0 ?        S<   Jun06   0:00 [kblockd]
+root        22  0.0  0.0      0     0 ?        S<   Jun06   0:00 [md]
+root        23  0.0  0.0      0     0 ?        S<   Jun06   0:00 [edac-poller]
+root        24  0.0  0.0      0     0 ?        S<   Jun06   0:00 [watchdogd]
+root        30  0.0  0.0      0     0 ?        S    Jun06   0:00 [kswapd0]
+root        31  0.0  0.0      0     0 ?        SN   Jun06   0:00 [ksmd]
+root        32  0.0  0.0      0     0 ?        SN   Jun06   0:02 [khugepaged]
+root        33  0.0  0.0      0     0 ?        S<   Jun06   0:00 [crypto]
+root        41  0.0  0.0      0     0 ?        S<   Jun06   0:00 [kthrotld]
+root        43  0.0  0.0      0     0 ?        S<   Jun06   0:00 [kmpath_rdacd]
+root        44  0.0  0.0      0     0 ?        S<   Jun06   0:00 [kaluad]
+root        45  0.0  0.0      0     0 ?        S<   Jun06   0:00 [kpsmoused]
+root        46  0.0  0.0      0     0 ?        S<   Jun06   0:00 [ipv6_addrconf]
+root        59  0.0  0.0      0     0 ?        S<   Jun06   0:00 [deferwq]
+root        94  0.0  0.0      0     0 ?        S    Jun06   0:00 [kauditd]
+root       226  0.0  0.0      0     0 ?        S<   Jun06   0:00 [ata_sff]
+root       236  0.0  0.0      0     0 ?        S    Jun06   0:00 [scsi_eh_0]
+root       237  0.0  0.0      0     0 ?        S<   Jun06   0:00 [scsi_tmf_0]
+root       238  0.0  0.0      0     0 ?        S    Jun06   0:00 [scsi_eh_1]
+root       239  0.0  0.0      0     0 ?        S<   Jun06   0:00 [scsi_tmf_1]
+root       242  0.0  0.0      0     0 ?        S<   Jun06   0:00 [ttm_swap]
+root       248  0.0  0.0      0     0 ?        S<   Jun06   0:03 [kworker/0:1H]
+root       258  0.0  0.0      0     0 ?        S    Jun06   0:06 [jbd2/vda1-8]
+root       259  0.0  0.0      0     0 ?        S<   Jun06   0:00 [ext4-rsv-conver]
+root       351  0.0  2.1  92372 39584 ?        Ss   Jun06   0:09 /usr/lib/systemd/systemd-journald
+root       383  0.0  0.1  45112  2040 ?        Ss   Jun06   0:00 /usr/lib/systemd/systemd-udevd
+root       407  0.0  0.0  55532  1080 ?        S<sl Jun06   0:02 /sbin/auditd
+polkitd    499  0.0  0.7 613020 13264 ?        Ssl  Jun06   0:03 /usr/lib/polkit-1/polkitd --no-debug
+root       503  0.0  0.0  17816  1876 ?        Ssl  Jun06   3:04 /usr/local/share/assist-daemon/assist_daemon
+dbus       505  0.0  0.1  58260  2484 ?        Ss   Jun06   0:09 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+chrony     511  0.0  0.0 117808  1876 ?        S    Jun06   0:03 /usr/sbin/chronyd
+root       548  0.0  0.1  26620  2048 ?        Ss   Jun06   0:04 /usr/lib/systemd/systemd-logind
+root       778  0.0  0.1 102904  2360 ?        Ss   Jun06   0:00 /sbin/dhclient -1 -q -lf /var/lib/dhclient/dhclient--eth0.lease -pf /var/run/dhclient-eth0.pid -H CentOS eth0
+root       834  0.0  0.9 574296 17264 ?        Ssl  Jun06   1:44 /usr/bin/python2 -Es /usr/sbin/tuned -l -P
+root       954  0.0  0.1  89704  2224 ?        Ss   Jun06   0:02 /usr/libexec/postfix/master -w
+postfix    959  0.0  0.2  89984  4272 ?        S    Jun06   0:00 qmgr -l -t unix -u
+root       967  0.0  0.5 804924 10008 ?        Ssl  Jun06  13:46 /usr/local/share/aliyun-assist/2.2.3.187/aliyun-service
+root       968  0.0  1.4 275868 26568 ?        Ssl  Jun06   0:45 /usr/sbin/rsyslogd -n
+root       974  0.0  0.2 112924  4328 ?        Ss   Jun06   0:02 /usr/sbin/sshd -D
+root       983  0.0  0.0  25908   948 ?        Ss   Jun06   0:00 /usr/sbin/atd -f
+root       992  0.0  0.0 110204   828 ttyS0    Ss+  Jun06   0:00 /sbin/agetty --keep-baud 115200,38400,9600 ttyS0 vt220
+root       993  0.0  0.0 110204   844 tty1     Ss+  Jun06   0:00 /sbin/agetty --noclear tty1 linux
+root      1005  0.0  0.2  41920  4136 ?        Ssl  Jun06  10:47 /usr/local/aegis/aegis_update/AliYunDunUpdate
+root      1065  1.0  1.0 135752 20428 ?        S<sl Jun06 183:57 /usr/local/aegis/aegis_client/aegis_10_97/AliYunDun
+root      5119  0.0  0.0      0     0 ?        S    Jun13   0:01 [kworker/u4:2]
+sigu      6421  0.0  0.0  22244  1356 ?        Ssl  Jun08   0:00 /home/sigu/.VimForCpp/nvim operator--.cc
+sigu      6431  0.0  0.5  14760  9740 ?        Ssl  Jun08   0:00 /home/sigu/.VimForCpp/vim/bundle/LanguageClient-neovim/bin/languageclient
+root      9406  0.0  0.0      0     0 ?        S    Jun14   0:01 [kworker/u4:1]
+sigu     11085  0.0  0.0  22244  1356 ?        Ssl  Jun08   0:00 /home/sigu/.VimForCpp/nvim Trainday1.cpp
+sigu     11092  0.0  0.3  16808  7464 ?        Ssl  Jun08   0:00 /home/sigu/.VimForCpp/vim/bundle/LanguageClient-neovim/bin/languageclient
+sigu     11107  0.0  0.0      0     0 ?        Z    Jun08   0:05 [querydb] <defunct>
+root     12006  0.0  0.0 126388  1616 ?        Ss   Jun06   0:01 /usr/sbin/crond -n
+sigu     12323  0.0  0.0  22244  1356 ?        Ssl  Jun08   0:00 /home/sigu/.VimForCpp/nvim interit.cc
+sigu     12333  0.0  0.5  14756  9752 ?        Ssl  Jun08   0:00 /home/sigu/.VimForCpp/vim/bundle/LanguageClient-neovim/bin/languageclient
+sigu     18246  0.0  0.0  22244  1360 ?        Ssl  Jun15   0:00 /home/sigu/.VimForCpp/nvim map.cc
+sigu     18253  0.0  0.2  14760  5228 ?        Ssl  Jun15   0:00 /home/sigu/.VimForCpp/vim/bundle/LanguageClient-neovim/bin/languageclient
+sigu     18264  0.0  0.0      0     0 ?        Z    Jun15   0:14 [querydb] <defunct>
+sigu     18824  0.0  0.0  22244  1360 ?        Ssl  Jun09   0:00 /home/sigu/.VimForCpp/nvim test.cc
+sigu     18831  0.0  0.3  14760  7412 ?        Ssl  Jun09   0:00 /home/sigu/.VimForCpp/vim/bundle/LanguageClient-neovim/bin/languageclient
+sigu     18847  0.0  0.0      0     0 ?        Z    Jun09   0:15 [querydb] <defunct>
+root     18875  0.0  0.3 157324  5848 ?        Ss   10:39   0:00 sshd: sigu [priv]
+sigu     18877  0.0  0.1 157492  2460 ?        S    10:39   0:01 sshd: sigu@pts/0
+sigu     18878  0.0  0.1 115680  2268 pts/0    Ss   10:39   0:00 -bash
+root     18899  0.0  0.3 157324  5824 ?        Ss   10:39   0:00 sshd: sigu [priv]
+sigu     18901  0.0  0.1 157324  2316 ?        S    10:39   0:00 sshd: sigu@notty
+sigu     18902  0.0  0.1  72860  2896 ?        Ss   10:39   0:00 /usr/libexec/openssh/sftp-server
+root     19557  0.0  0.3 157324  5844 ?        Ss   11:03   0:00 sshd: sigu [priv]
+sigu     19559  0.0  0.1 157324  2316 ?        S    11:03   0:00 sshd: sigu@pts/1
+sigu     19560  0.0  0.1 115680  2160 pts/1    Ss+  11:03   0:00 -bash
+root     19579  0.0  0.3 157324  5820 ?        Ss   11:03   0:00 sshd: sigu [priv]
+sigu     19583  0.0  0.1 157324  2316 ?        S    11:03   0:00 sshd: sigu@notty
+sigu     19584  0.0  0.1  72252  2872 ?        Ss   11:03   0:00 /usr/libexec/openssh/sftp-server
+sigu     19869  0.0  0.0  22244  1356 ?        Ssl  Jun09   0:00 /home/sigu/.VimForCpp/nvim test.cc
+sigu     19876  0.0  0.2  14760  5020 ?        Ssl  Jun09   0:00 /home/sigu/.VimForCpp/vim/bundle/LanguageClient-neovim/bin/languageclient
+sigu     19887  0.0  0.0      0     0 ?        Z    Jun09   0:00 [querydb] <defunct>
+root     20735  0.0  1.7 363116 33820 ?        Ssl  Jun16   0:02 /usr/bin/python2 -Es /usr/sbin/firewalld --nofork --nopid
+sigu     21663  0.0  0.0  22244  1356 ?        Ssl  Jun10   0:00 /home/sigu/.VimForCpp/nvim ploymor.cc
+sigu     21673  0.0  0.5  14756  9752 ?        Ssl  Jun10   0:00 /home/sigu/.VimForCpp/vim/bundle/LanguageClient-neovim/bin/languageclient
+sigu     21676  0.0  0.0  22244  1356 ?        Ssl  Jun06   0:00 /home/sigu/.VimForCpp/nvim object.cpp
+sigu     21683  0.0  0.4  16808  7540 ?        Ssl  Jun06   0:00 /home/sigu/.VimForCpp/vim/bundle/LanguageClient-neovim/bin/languageclient
+sigu     21693  0.0  0.0      0     0 ?        Z    Jun06   0:03 [querydb] <defunct>
+sigu     21926  0.0  0.0  22244  1356 ?        Ssl  Jun10   0:00 /home/sigu/.VimForCpp/nvim polymor.cc
+sigu     21936  0.0  0.5  14760  9728 ?        Ssl  Jun10   0:00 /home/sigu/.VimForCpp/vim/bundle/LanguageClient-neovim/bin/languageclient
+postfix  22523  0.0  0.2  89812  4072 ?        S    12:29   0:00 pickup -l -t unix -u
+root     23507  0.0  0.0      0     0 ?        S    12:40   0:00 [kworker/0:2]
+sigu     24979  0.0  0.0  22204  1264 ?        Ssl  Jun17   0:00 /home/sigu/.VimForCpp/nvim head.h
+sigu     24986  0.0  0.2  16824  4568 ?        Ssl  Jun17   0:00 /home/sigu/.VimForCpp/vim/bundle/LanguageClient-neovim/bin/languageclient
+sigu     24997  0.0  1.5 613860 28908 ?        Sl   Jun17   0:02 /home/sigu/.VimForCpp/cquery/bin/cquery --log-file=/tmp/cquery/cq.log
+root     26026  0.0  0.0      0     0 ?        S    13:50   0:00 [kworker/0:0]
+sigu     26388  0.0  0.0 155476  1864 pts/0    R+   13:57   0:00 ps aux
+sigu     29473  0.0  0.0  22228  1288 ?        Ssl  Jun17   0:00 /home/sigu/.VimForCpp/nvim myMv.c
+sigu     29483  0.0  0.5  14756  9776 ?        Ssl  Jun17   0:00 /home/sigu/.VimForCpp/vim/bundle/LanguageClient-neovim/bin/languageclient
+sigu     32717  0.0  0.0  22244  1356 ?        Ssl  Jun07   0:00 /home/sigu/.VimForCpp/nvim nullptr.cpp
+sigu     32727  0.0  0.5  14756  9772 ?        Ssl  Jun07   0:00 /home/sigu/.VimForCpp/vim/bundle/LanguageClient-neovim/bin/languageclient
